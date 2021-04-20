@@ -146,6 +146,8 @@ header {
 
 header a { color: #fff; }
 
+header a:hover { text-decoration: underline; }
+
 header .wrapper { 
   position: relative;
   padding: 28px 0 26px;
@@ -288,6 +290,8 @@ nav a {
   color: #3090D1;
 }
 
+.content-btn a:hover { box-shadow: 0 0 10px rgba(0,0,0,.5); }
+
 .content-btn a::after {
   content: '\f178';
   margin-left: 10px;
@@ -422,6 +426,8 @@ h3::after {
   color: #c2c2c2;
 }
 
+.card-menu a:hover::after { color: #000; }
+
 .card-menu li a[title="Like"]::after { content: '\f164'; }
 .card-menu li a[title="Comment"]::after { content: '\f075'; }
 .card-menu li a[title="Share"]::after { content: '\f178'; }
@@ -445,6 +451,9 @@ h3::after {
   justify-content: space-between;
   align-items: center;
 }
+
+.categories-list a:hover { box-shadow: 0 0 15px rgba(0,0,0,.5); }
+
 
 .categories h3 { color: #FEFEF5; }
 
@@ -578,6 +587,8 @@ h3::after {
 =================================*/ 
 footer { position: relative; }
 
+footer a:hover { text-decoration: underline; }
+
 .footer-content {
   width: 100%;
   padding-top: 60px;
@@ -668,6 +679,8 @@ address::before {
   font-family: fontAwesome;
 }
 
+.social a:hover::after { color: #000; }
+
 .facebook::after { content: '\f082'; } 
 .google::after { content: '\f0d5'; } 
 .linkdin::after { content: '\f0e1'; } 
@@ -710,6 +723,8 @@ address::before {
 
 .imglink li { margin-bottom: 20px; }
 
+.imglink a:hover { box-shadow: 0 0 15px rgba(0,0,0,.5); }
+
 .footer-btm .wrapper { 
   display: flex;
   justify-content: space-between;
@@ -721,6 +736,8 @@ address::before {
   letter-spacing: 1px;
   color: #A9BCDC;
 }
+
+.footer-btn:hover a:after { color: #000; }
 
 .btm-list {
   display: flex;
