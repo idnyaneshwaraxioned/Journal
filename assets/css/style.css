@@ -131,10 +131,6 @@ li {
 .hamburger.active::after { content: '\f00d'; }
 
 .bar1 {
-  width: 100%;
-  height: 0;
-  border-top: 2px solid #fff;
-  margin-bottom: 6px;
   text-indent: -99999px;
   float: left;
 }
@@ -789,8 +785,108 @@ address::before {
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 1204px) {
+
+header .wrapper { width: 98%; }
+
+.menu-left { flex-basis: 38.5%; }
+.menu-right { flex-basis: 40%; }
+
+.subscribe .wrapper { width: 100%; }
+.subs-form { width: 70%; }
+.input-control { flex-basis: 75%; }
+.imglink li { flex-basis: 45%; }
+.social { width: 80%; }
+
+.btm-list {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-basis: 35%; }
 
 
+footer { background: linear-gradient(to right, #4D4887, #2E8CD4); }
+footer figure { display: none; }
+.footer-content { 
+  position: unset;
+  transform: translate(0);
+}
 
 }  
+
+@media only screen and (max-width: 995px) {
+
+.hamburger { display: block; z-index: 10; }
+
+nav { 
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+
+}
+
+nav.active { z-index: 1; }
+
+.menu-left,
+.menu-right { 
+  width: 100%;
+  display: none;
+  position: absolute;
+  /* z-index: 3; */
+  text-align: center;
+  background: linear-gradient(to right, #4D4887, #2E8CD4);
+}
+
+.menu-left.active,  
+.menu-right.active { display: block; }  
+
+.menu-left { top: 0; }
+.menu-right { top: 40%;}
+
+.menu-left li,
+.menu-right li { 
+  padding: 23px 0;
+  display: block;
+}
+.post-card { justify-content: center; }
+.card-item { flex-basis: 55%; }
+
+.categories { 
+  padding: 40px 0;
+  background: #318AAA; 
+}
+
+.categories-list { flex-direction: column; }
+
+.categories > figure { display: none; }
+
+.categories .wrapper { 
+  position: unset; 
+  transform: unset;
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+.highlights-list { flex-direction: column; }
+.subs-form { flex-direction: column; }
+
+.subs-form input[type="submit"] { 
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+footer > figure { display: none; }
+
+.footer-grp { flex-direction: column; }
+
+.footer-btn::after,
+.footer-btn::before { display: none; }
+.footer-btn { transform: translateX(-50%); }
+.social { width: 50%; }
+.footer-grp .grp-item { margin: 10px 0; }
+
+}
