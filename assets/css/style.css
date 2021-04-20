@@ -823,7 +823,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  z-index: -1;
   top: 0;
 
 }
